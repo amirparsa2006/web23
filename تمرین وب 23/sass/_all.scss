@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth ;
+}
+body{
+    margin: 0;
+    padding: 0;
+
+}
+img{
+    max-width: 100%;
+}
+p{
+    text-align: justify;
+}
+.container{
+    width: 100%;
+    margin: auto;
+}
+.w-full{
+    width: 100%;
+    padding: 0.5rem;
+}
+.w-12{
+    width: 100%;
+    padding: 0.5rem;
+}
+.w-11{
+    width :91.66666666%;
+    padding: 0.5rem;
+}
+.w-10{
+    width :83.33333333%;
+    padding: 0.5rem;
+}
+.w-9{
+    width :75%;
+    padding: 0.5rem;
+}
+.w-8{
+    width :66.66666666%;
+    padding: 0.5rem;
+}
+.w-7{
+    width :58.33333333%;
+    padding: 0.5rem;
+}
+.w-6{
+    width: 50%;
+    padding: 0.5rem;
+}
+.w-5{
+    width: 41.666666%;
+    padding: 0.5rem;
+}
+.w-4{
+    width: 33.33333333%;
+    padding: 0.5rem;
+}
+.w-3{
+    width: 25%;
+    padding: 0.5rem;
+}
+.w-2{
+    width: 16.66666666%;
+    padding: 0.5rem;
+}
+.w-1{
+    width: 8.33333333%;
+    padding: 0.5rem;
+}
+
+
+.flex{
+    display: flex !important;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.border{
+    border: 1px solid black;
+}
+.bg-blue-300{
+    background-color: lightblue;
+}
+header{
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        padding: 1rem;
+        color: black;
+    }
+}
+
+@media(min-width:768px){
+    .container{
+        width: 80%;
+        margin: auto;
+    }
+    .md-w-12{
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .md-w-11{
+        width :91.66666666%;
+        padding: 0.5rem;
+    }
+    .md-w-10{
+        width :83.33333333%;
+        padding: 0.5rem;
+    }
+    .md-w-9{
+        width :75%;
+        padding: 0.5rem;
+    }
+    .md-w-8{
+        width :66.66666666%;
+        padding: 0.5rem;
+    }
+    .md-w-7{
+        width :58.33333333%;
+        padding: 0.5rem;
+    }
+    .md-w-6{
+        width: 50%;
+        padding: 0.5rem;
+    }
+    .md-w-5{
+        width: 41.666666%;
+        padding: 0.5rem;
+    }
+    .md-w-4{
+        width: 33.33333333%;
+        padding: 0.5rem;
+    }
+    .md-w-3{
+        width: 25%;
+        padding: 0.5rem;
+    }
+    .md-w-2{
+        width: 16.66666666%;
+        padding: 0.5rem;
+    }
+    .md-w-1{
+        width: 8.33333333%;
+        padding: 0.5rem;
+    }
+}

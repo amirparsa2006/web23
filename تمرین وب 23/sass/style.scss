@@ -1,0 +1,48 @@
+@use "ali";
+@use "all";
+// @import url("_all.scss"); PURE CSS 
+.border-bottom{
+    border-bottom:1px solid #d5d5d5 ;
+}
+header{
+    box-shadow: 3px  3px  3px  rgb(0, 0, 0) ;
+    position: relative;
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    a{
+        padding: 1rem;
+        text-decoration: none;
+        color: black;
+    }
+    .child-mega-menu{
+        position: absolute;
+        left: 0;
+        top: 7rem;
+        width: 100%;
+    }
+    .active{
+        font-weight: bold;
+    }
+    .child{
+        position: absolute;
+        width: 100%;
+        left: 0;
+    }
+    .child-mega-menu{
+        display: none;
+    }
+    .parent-mega-menu{
+        a{
+            padding: 3rem 1rem;
+
+        }
+    }
+    .parent-mega-menu:hover{
+        & .child-mega-menu{
+            display: block;
+        }
+    }
+}

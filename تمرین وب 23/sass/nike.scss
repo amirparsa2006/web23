@@ -1,0 +1,92 @@
+@use "all";
+@use "ali";
+
+.top-header {
+    background-color: #f5f5f5;
+    padding: 0.51rem;
+    box-shadow: 2px 2px 1px rgba(128, 0, 128, 0.689);
+
+    .parent {
+        position: relative;
+
+        & .child {
+            position: absolute;
+            width: 200px;
+            box-shadow: 1px 1px #2c2c2c;
+            z-index: 5;
+            background-color: white;
+            left: 0;
+            line-height: 3rem;
+            display: none;
+
+            li::after {
+                display: none;
+            }
+        }
+
+        &:hover {
+            & .child {
+                display: block;
+            }
+        }
+    }
+}
+
+.has-pip {
+    li {
+        position: relative;
+    }
+
+    li::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 19px;
+        top: 3px;
+        right: 0rem;
+        background-color: #000;
+    }
+
+    li:last-child::after {
+        display: none;
+    }
+}
+
+.main-header {
+    box-shadow: 1px 1px #2c2c2c;
+    padding: 1rem;
+
+    .header-search {
+        padding: 0.92rem;
+        border: 1px solid #dbdbdb;
+        outline: transparent;
+        border-right: none;
+    }
+
+    .mag {
+        display: inline-block;
+        padding: .4rem;
+        height: 2.9rem;
+        border: 1px solid #dbdbdb;
+        border-left: none;
+    }
+
+    .child-mega-menu {
+        position: absolute;
+        width: 100%;
+        background-color: #fff;
+        z-index: 5;
+        left: 0;
+        top: 7rem;
+        box-shadow: 2px 4px 4px #e5d6d6;
+        display: none;
+    }
+    .parent-mega-menu:hover{
+        .child-mega-menu {
+            display: block;
+        }
+    }
+}
+.fff{
+    width: 10%;
+}
